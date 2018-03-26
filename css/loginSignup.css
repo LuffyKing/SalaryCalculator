@@ -1,0 +1,46 @@
+.formText {
+
+    color: #212121;
+    position: relative;
+    -webkit-animation-name: formChange; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: formChange;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes formChange {
+  0%   {color:#0288D1;}
+  25%  {color:#03A9F4;}
+  50%  {color:#B3E5FC;}
+  75%  {color:#212121;}
+  100% {color:#0288D1;}
+}
+
+/* Standard syntax */
+@keyframes formChange {
+    0%   {color:#0288D1;}
+    25%  {color:#03A9F4;}
+    50%  {color:#B3E5FC;}
+    75%  {color:#212121;}
+    100% {color:#0288D1;}
+}
+
+}
+/*
+.dark-primary-color    { background: #0288D1; }
+.default-primary-color { background: #03A9F4; }
+.light-primary-color   { background: #B3E5FC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFEB3B; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+.lb-text   { color: #B3E5FC; }
+.db-text{ color: #03A9F4;}
+.default-primary-color-btn{ background: #03A9F4; }
+.default-primary-color-btn:hover{ background: #0288D1; }
+*/

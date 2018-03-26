@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/hoverEffects.css">
+  <link rel="stylesheet" href="css/colorOverlay.css">
+  <link rel="stylesheet" href="css/animationDelay.css">
+  <link rel="stylesheet" href="css/palette.css">
+  <link rel="stylesheet" href="css/loginSignup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+</head>
+<body class="bg-primary">
+  <section id="signin-form" class='container-fluid mb-4 mt-4'>
+    <div class="d-none bir delay-1s animated row mb-4 justify-content-center">
+      <div class="card box-shadow bg-warning">
+          <div class="form-group">
+            <div class="p-4">
+              <p class="logo text-center db-text display-4">Salary Calculator</p>
+              <p class='text-center db-text sub-logo h6'>Calculate your Salary</p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text default-primary-color"><i class="fa text-white fa-user-circle"></i></span>
+                      </div>
+                      <input id="firstname" type="text" class="form-control" required placeholder="Enter Your First Name" />
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text default-primary-color"><i class="fa text-white fa-user-circle"></i></span>
+                      </div>
+                      <input id="lastname" type="text" required class="form-control" placeholder="Enter Your Last Name" />
+
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button class="btn default-primary-color-btn text-primary-color btn-block" type="button" id="calculateByName" >Calculate</button>
+
+                </div>
+
+
+              </div>
+              <div class="row">
+                <div class="col">
+                  <hr class="bg-primary">
+
+                </div>
+
+              </div>
+
+
+              <div class="row">
+                <div class="col">
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text default-primary-color"><i class="fa text-white fa-user-circle"></i></span>
+                          </div>
+                          <input type="number" min="1" max="35" id="years" class="form-control" placeholder="Enter Experience Level" />
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="form-group">
+                        <select class="form-control" id="role" name="">
+                          <option value="">Select The Employee Type</option>
+                          <option value="Intern"> Intern</option>
+                          <option value="Associate">Associate</option>
+                          <option value="Manager">Manager</option>
+                          <option value="Executive">Executive</option>
+                          <option value="Director">Director</option>
+
+                        </select>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                  <div class="row">
+                    <div class="col">
+
+                        <button class="btn default-primary-color-btn text-primary-color btn-block" id="calculate" >Calculate</button>
+
+
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row d-none bir delay-1s animated  justify-content-center">
+      <div class="jumbotron bg-warning text-center">
+        <h3 class="db-text ubu">Your Salary is!</h3>
+        <p><span class="text-white" id="result"></span></p>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/tooltip.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/animationsConfig.js">
+  </script>
+  <script type="text/javascript" src="js/salary.js">
+
+  </script>
+</body>
+</html>

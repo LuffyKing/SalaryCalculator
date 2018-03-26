@@ -1,0 +1,15 @@
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}

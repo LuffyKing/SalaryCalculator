@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico|Sedgwick+Ave+Display');
+
+body{
+  margin: 0;
+
+  height: 100vh;
+
+  background: url('../images/weconnect.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.logo{
+  font-family: 'Pacifico', cursive !important;
+}
+#particles-js{
+  height: 100vh;
+}
+.welcome{
+  font-family: 'Lobster', cursive;
+
+}
+
+.panel{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top:30%;
+}
+.delay-3s{
+  animation-delay: 3s;
+}
+.delay-1s{
+  animation-delay: 1s;
+}
+.delay-2s{
+  animation-delay: 2s;
+}
